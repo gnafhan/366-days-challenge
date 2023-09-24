@@ -1,0 +1,2 @@
+def make_readable(seconds):
+    return f"{'0'+ str(seconds//3600) if seconds//3600<10 else seconds//3600}:{'0'+ str(seconds%3600//60) if seconds%3600//60 < 10 else seconds%3600//60}:{'0'+ str(seconds%3600%60)if seconds%3600%60 < 10 else seconds%3600%60}"
